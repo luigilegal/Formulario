@@ -1,0 +1,188 @@
+@font-face {
+    src: url(fonts/Tiny5-Regular.ttf);
+    font-family: Tiny5-Regular;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: rgb(20,24,38);
+    font-family: Tiny5-Regular;
+    
+}
+#box_header h1{
+    z-index: 1;
+    top: 40px;
+    position: relative;
+    width: 300px;
+    border-radius: 10em;
+    border: 2px solid rgb(81,85,115);;
+    background-color: rgba(168, 181, 255, 0.986);
+    border-width: 2px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    left: calc(50vw - 150px) ;
+    box-shadow: 5px 5px 10px rgb(34, 36, 49);
+}
+
+#form1{
+    left: calc(50vw - 250px);
+    position: relative;
+    border-radius: 25px;
+    background-color: rgb(49,55,89);
+    width: 500px;    
+    height: fit-content(250px) fit-content(250px) auto;
+    box-shadow: 5px 5px 5px rgb(29, 37, 44);
+    display: flex; 
+    flex-wrap: wrap;
+    overflow: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    
+}
+
+#form {
+    flex-wrap: wrap;
+    background-color: rgb(59,75,89);
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.caixa{
+    top: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 1.8%;
+    width: 200px;
+    background-color: rgb(231, 223, 223);
+    position: relative;
+    box-shadow: 5px 5px 5px rgb(27, 34, 41);
+    display: inline-block;
+    align-items: flex-start;
+    text-align: center;
+}
+.Warning{
+    align-content: center;
+    color: red;
+    display: none;
+    margin-top: -5px;
+    text-align: center;
+    font-size: 12px;
+}
+#submit{
+    width: 100px;
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(179, 78, 78);
+    border-radius: 20px;
+    font-family: Tiny5-Regular;
+}
+#submit:hover{
+    background-color: rgb(228, 72, 72);
+    animation: glow2 3s linear infinite;
+}
+#submit:active{
+    background-color: rgb(250, 48, 48);
+}
+#submitC{
+    display: relative;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    bottom: 20px;
+    width: 100%;
+}
+
+.formbt{
+    width: 80%;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgb(153, 148, 148);
+    
+}
+
+.formbt:hover{
+    animation: glow2 3s linear infinite;
+}
+
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#copy{
+    font-size: 12px;
+    font-family: arial;
+}
+#visi{
+    display: inline-block;
+    position:relative;
+    top: 2px;
+    left: -18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#checkC{
+    position: relative;
+    top: 20px;
+    height: 30px;
+    right: 15%;
+    padding: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.test{
+    margin: 0px;
+    padding: 15px;
+}
+
+.warn{
+    color: rgb(255, 255, 255);
+}
+
+.warn:hover{
+    animation: glow 1s ease-in-out infinite;
+}
+
+#nome{
+    text-transform: capitalize;
+}
+
+#terms{
+    color: rgb(66, 84, 245);
+    font-size: 13px;
+}
+
+@keyframes appear {
+    0%{border: 0px solid rgb(231, 223, 223);
+    }
+    100%{
+        border: 2px solid red;
+    }
+    
+}
+@keyframes glow2{
+    0%{
+        box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    }
+    50%{
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+    100%{
+        box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    }
+}
+
+@keyframes glow {
+    0%{
+        text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    }
+    50%{
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+    100%{
+        text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    }
+}
